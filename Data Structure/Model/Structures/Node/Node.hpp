@@ -10,5 +10,27 @@
 #define Node_hpp
 
 #include <stdio.h>
+template <class Type>
+class Node{
+public:
+    Node();
+    Node(Type data);
+    void setData(Type data);
+    Type getData();
+private:
+    
+protected:
+    Type data;
+    
+};
+template <class Type>
+Node<Type> :: Node(){
+    //Default COnstructor
+}
+template <class Type>
+Node<Type> :: Node(Type data){
+    this -> data = data;
+}
+
 
 #endif /* Node_hpp */
