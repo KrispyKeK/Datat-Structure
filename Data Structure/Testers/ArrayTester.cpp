@@ -30,5 +30,5 @@ void ArrayTester:: testArrayUse()
 }
 void ArrayTester:: testAdvancedArray()
 {
-    
+    cout << "Test";
 }
