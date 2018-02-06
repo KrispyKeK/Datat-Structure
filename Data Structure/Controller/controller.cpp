@@ -11,6 +11,7 @@
 #include "CrimeData.hpp"
 #include "Tools/Timer.hpp"
 #include "FileController.hpp"
+#include "Array.hpp"
 using namespace std;
 
 void controller :: start()
