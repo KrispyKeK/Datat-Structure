@@ -10,5 +10,14 @@
 #define ArrayTester_hpp
 
 #include <stdio.h>
+#include "/Users/jdel8359/Documents/Data Structure/Datat  Structure/Data Structure/Model/Structures/Linear/Array.hpp"
+#include "/Users/jdel8359/Documents/Data Structure/Datat  Structure/Data Structure/Controller/FileController.hpp"
+#include "/Users/jdel8359/Documents/Data Structure/Datat  Structure/Data Structure/Controller/Tools/Timer.hpp"
+
+class ArrayTester{
+public:
+    void testArrayUse();
+    void testAdvancedArray();
+};
 
 #endif /* ArrayTester_hpp */

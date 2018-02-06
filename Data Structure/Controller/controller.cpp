@@ -12,10 +12,14 @@
 #include "Tools/Timer.hpp"
 #include "FileController.hpp"
 #include "Array.hpp"
+#include "ArrayTester.hpp"
 using namespace std;
 
 void controller :: start()
 {
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
     findMaxMin();
     cout << "Testing the Timer class" << endl;
     Timer codeTimer;
