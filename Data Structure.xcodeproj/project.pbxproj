@@ -28,7 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		615B0179202CB2B8004E81AB /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		615B0179202CB2B8004E81AB /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		616652EB2029F554000022B4 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		616652EE202A0013000022B4 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		616652EF202A0013000022B4 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				616652EB2029F554000022B4 /* Node.hpp */,
 				616652F2202A0BC9000022B4 /* LinearNode.hpp */,
-				615B0179202CB2B8004E81AB /* DoublyLinkedList.hpp */,
+				615B0179202CB2B8004E81AB /* List.hpp */,
 			);
 			path = Node;
 			sourceTree = "<group>";

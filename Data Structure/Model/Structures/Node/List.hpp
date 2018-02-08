@@ -13,7 +13,7 @@
 #include <assert.h>
 #include "LinearNode.hpp"
 
-class DoublyLinkedList{
+class List{
 protected:
     int size;
 public:
