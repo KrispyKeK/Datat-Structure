@@ -45,5 +45,26 @@ template <class Type>
 LinearNode<Type> * LinearNode<Type> :: getNextNode(){
     return next;
 }
+//void LinkedList<type> :: addAtIndex(int index, Type item){
+//    assert(index >= 0 && index <= size);
+//    if (inde == size){
+//        add(item);
+//    }
+//    else{
+//        LinearNode<Type> * toBeAddes = new LinearNode<Type>(item);
+//        if (index == 0){
+//            toBeAdded -> setNextNode(front);
+//            front = toBeAdded;
+//        }
+//        else{
+//            LinearNode<Type> * previous = nullptr;
+//            LinearNode<Type> * current = front;
+//
+//
+//
+//
+//        }
+//    }
+//}
 
 #endif /* LinearNode_hpp */
