@@ -10,6 +10,7 @@
 #define LinkedList_hpp
 
 #include <stdio.h>
+#include <iostream>
 #include "List.hpp"
 
 using namespace std;
@@ -25,10 +26,10 @@ public:
     int getSize() const;
     LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
-    void add(Type item);
-    void addAtIndex(int index, Type item);
-    Type getFromIndex(int index);
-    Type remove(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
 private:
 };
 template <class Type>

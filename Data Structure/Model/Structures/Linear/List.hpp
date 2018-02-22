@@ -19,7 +19,7 @@ protected:
     int size;
 public:
     virtual void add(Type item) = 0;
-    virtual void addAtItem(int index, Type item) = 0;
+    virtual void addAtIndex(int index, Type item) = 0;
     virtual Type remove(int item) = 0;
     virtual Type getFromIndex(int index) = 0;
     
