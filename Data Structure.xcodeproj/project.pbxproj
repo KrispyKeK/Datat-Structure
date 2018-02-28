@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		616652F0202A0013000022B4 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616652EE202A0013000022B4 /* ArrayTester.cpp */; };
+		6188B0BA20470EEE00775624 /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6188B0B820470EEE00775624 /* TestingStacksAndQueues.cpp */; };
 		61A1DC84203C88FD00A1358D /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61A1DC82203C88FD00A1358D /* LinkedListTester.cpp */; };
 		61C169EB2024B05F00DAC96B /* controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C169E92024B05F00DAC96B /* controller.cpp */; };
 		61C169F12024B13000DAC96B /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C169EF2024B13000DAC96B /* Timer.cpp */; };
@@ -38,6 +39,8 @@
 		616652F2202A0BC9000022B4 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		6188B0B22046F60600775624 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		6188B0B52046F84900775624 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
+		6188B0B820470EEE00775624 /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
+		6188B0B920470EEE00775624 /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
 		61A1DC7F203C6EAF00A1358D /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		61A1DC82203C88FD00A1358D /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		61A1DC83203C88FD00A1358D /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				616652EF202A0013000022B4 /* ArrayTester.hpp */,
 				61A1DC82203C88FD00A1358D /* LinkedListTester.cpp */,
 				61A1DC83203C88FD00A1358D /* LinkedListTester.hpp */,
+				6188B0B820470EEE00775624 /* TestingStacksAndQueues.cpp */,
+				6188B0B920470EEE00775624 /* TestingStacksAndQueues.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				61C169FF2024B4D800DAC96B /* FileController.cpp in Sources */,
 				61C169EB2024B05F00DAC96B /* controller.cpp in Sources */,
 				616652F0202A0013000022B4 /* ArrayTester.cpp in Sources */,
+				6188B0BA20470EEE00775624 /* TestingStacksAndQueues.cpp in Sources */,
 				61C169F12024B13000DAC96B /* Timer.cpp in Sources */,
 				61A1DC84203C88FD00A1358D /* LinkedListTester.cpp in Sources */,
 			);

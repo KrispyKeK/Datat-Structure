@@ -32,7 +32,7 @@ private:
 protected:
     
 
-}
+};
 template <class Type>
 Stack<Type> :: Stack() : LinkedList<Type>(){
     
@@ -70,7 +70,7 @@ Type Stack<Type> :: pop(){
     assert(this->size > 0);
     Type removed = this->front->getData();
     LinearNode<Type> *removedNode = this->getFront();
-    this->front = removedNOde -> getNextNode();
+    this->front = removedNode -> getNextNode();
     delete removedNode;
     
     this->size;
@@ -87,7 +87,7 @@ Type Stack<Type> :: peek(){
     return this->getFront()->getData();
 }
 template <class Type>
-Type Stack<Type> :: getFrontIndex(int index){
+Type Stack<Type> :: getFromIndex(int index){
     assert(index == 0);
     return peek();
 }
