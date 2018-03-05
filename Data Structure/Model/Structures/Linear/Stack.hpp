@@ -30,7 +30,6 @@ public:
 private:
     
 protected:
-    
 
 };
 template <class Type>
