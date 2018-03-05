@@ -72,7 +72,7 @@ Type Stack<Type> :: pop(){
     this->front = removedNode -> getNextNode();
     delete removedNode;
     
-    this->size;
+    this->size--;
     return removed;
 }
 template <class Type>

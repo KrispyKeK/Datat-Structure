@@ -10,6 +10,7 @@
 #define controller_hpp
 
 #include <stdio.h>
+#include "RecursionTester.hpp"
 class controller{
 private:
     void findMaxMin();

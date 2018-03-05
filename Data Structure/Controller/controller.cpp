@@ -31,6 +31,8 @@ void controller :: start()
     }
     codeTimer.stopTimer();
     codeTimer.displayInformation();
+    RecursionTester test;
+    test.testRecursionNumbers();
 }
 
 void controller :: findMaxMin(){

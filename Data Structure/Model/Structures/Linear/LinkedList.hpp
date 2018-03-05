@@ -124,7 +124,7 @@ Type LinkedList<Type> :: remove(int index){
         }
         
     }
-    this->size-1;
+    this->size-=1;
     removedData = toBeRemoved->getData();
     delete toBeRemoved;
     return removedData;
