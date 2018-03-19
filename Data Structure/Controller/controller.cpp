@@ -18,6 +18,8 @@ using namespace std;
 void controller :: start()
 {
     ArrayTester myTest;
+    SortingTester sortingTest;
+    sortingTest.testSorts();
     myTest.testArrayUse();
     myTest.testAdvancedArray();
     findMaxMin();
@@ -33,6 +35,7 @@ void controller :: start()
     codeTimer.displayInformation();
     RecursionTester test;
     test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void controller :: findMaxMin(){

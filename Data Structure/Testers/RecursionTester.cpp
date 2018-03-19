@@ -21,7 +21,12 @@ int RecursionTester::fib(int number)
     }
 }
 string RecursionTester::mystery(string word){
-    return "";
+    if (word.length() == 1){
+        return word;
+    }
+    else{
+        return word + mystery(word.substr(0,word.length() - 1));
+    }
 }
 void RecursionTester::testRecursionNumbers()
 {
@@ -34,5 +39,7 @@ void RecursionTester::testRecursionNumbers()
 }
 void RecursionTester::testRecursionString()
 {
-    
+    cout << mystery("X") << endl;
+    cout << mystery("car") << endl;
+    cout << mystery("Ke") << endl;
 }

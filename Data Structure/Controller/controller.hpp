@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "RecursionTester.hpp"
+#include "SortingTester.hpp"
 class controller{
 private:
     void findMaxMin();
