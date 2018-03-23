@@ -22,7 +22,7 @@ class Graph
 {
 private:
     
-    static const int MAXIMUM = 20;
+    static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
@@ -231,6 +231,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
     
     vertexQueue.push(vertex);
     while(!vertexQueue.empty()){
+        int currentIndex = vertexQueue.front();
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();
         
