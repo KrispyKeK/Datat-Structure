@@ -13,10 +13,13 @@
 #include "FileController.hpp"
 #include "Array.hpp"
 #include "ArrayTester.hpp"
+#include "GraphTester.hpp"
 using namespace std;
 
 void controller :: start()
 {
+    GraphTester graph;
+    graph.testGraphs();
     ArrayTester myTest;
     SortingTester sortingTest;
     sortingTest.testSorts();

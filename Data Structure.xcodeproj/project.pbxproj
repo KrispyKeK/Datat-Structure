@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		615FD85620600276005B8F87 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 615FD85420600276005B8F87 /* Graph.cpp */; };
+		611DB12F20653D88008EC6C1 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 611DB12D20653D88008EC6C1 /* GraphTester.cpp */; };
 		616067E1205AB41A0098E670 /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616067DF205AB41A0098E670 /* SortingTester.cpp */; };
 		616652F0202A0013000022B4 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616652EE202A0013000022B4 /* ArrayTester.cpp */; };
 		6174613E204D8F48000C17AB /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6174613C204D8F48000C17AB /* RecursionTester.cpp */; };
@@ -33,8 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		611DB12D20653D88008EC6C1 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		611DB12E20653D88008EC6C1 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		615B0179202CB2B8004E81AB /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
-		615FD85420600276005B8F87 /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		615FD85520600276005B8F87 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		616067DF205AB41A0098E670 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
 		616067E0205AB41A0098E670 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
@@ -91,6 +92,8 @@
 				6174613D204D8F48000C17AB /* RecursionTester.hpp */,
 				616067DF205AB41A0098E670 /* SortingTester.cpp */,
 				616067E0205AB41A0098E670 /* SortingTester.hpp */,
+				611DB12D20653D88008EC6C1 /* GraphTester.cpp */,
+				611DB12E20653D88008EC6C1 /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -193,7 +196,6 @@
 		61C169FA2024B30200DAC96B /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
-				615FD85420600276005B8F87 /* Graph.cpp */,
 				615FD85520600276005B8F87 /* Graph.hpp */,
 			);
 			path = NonLinear;
@@ -269,11 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615FD85620600276005B8F87 /* Graph.cpp in Sources */,
 				6174613E204D8F48000C17AB /* RecursionTester.cpp in Sources */,
 				61C169F72024B27100DAC96B /* CrimeData.cpp in Sources */,
 				61C169F42024B14900DAC96B /* Runner.cpp in Sources */,
 				61C169FF2024B4D800DAC96B /* FileController.cpp in Sources */,
+				611DB12F20653D88008EC6C1 /* GraphTester.cpp in Sources */,
 				61C169EB2024B05F00DAC96B /* controller.cpp in Sources */,
 				616067E1205AB41A0098E670 /* SortingTester.cpp in Sources */,
 				616652F0202A0013000022B4 /* ArrayTester.cpp in Sources */,
