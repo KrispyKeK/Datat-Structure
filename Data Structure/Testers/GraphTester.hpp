@@ -9,10 +9,9 @@
 #ifndef GraphTester_hpp
 #define GraphTester_hpp
 
-#include <stdio.h>
+
 #include <iostream>
-#include "Graph.hpp"
-using namespace std;
+#include "/Users/jdel8359/Documents/Data Structure/Datat  Structure/Data Structure/Model/Structures/NonLinear/Graph.hpp"
 
 class GraphTester{
 

@@ -12,7 +12,7 @@ void GraphTester::testGraphs(){
     compareTraversals();
 }
 void GraphTester::compareTraversals(){
-    puzzle.depthFirstTraversal(puzzle, 0);
+    //puzzle.depthFirstTraversal(puzzle, 0);
 }
 void GraphTester::setup(){
     puzzle.addVertex("a ");
