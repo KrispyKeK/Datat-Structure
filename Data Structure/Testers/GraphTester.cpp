@@ -9,12 +9,32 @@
 #include "GraphTester.hpp"
 void GraphTester::testGraphs(){
     setup();
-    compareTraversals();
+    //compareTraversals();
+    findCheapestTraversal();
 }
 void GraphTester::compareTraversals(){
     puzzle.depthFirstTraversal(puzzle, 33);
     cout << "------------------" << endl;
     puzzle.breadthFirstTraversal(puzzle, 2);
+}
+void GraphTester::findCheapestTraversal()
+{
+    int min = puzzle.costTraversal(puzzle, 0);
+    int max = puzzle.costTraversal(puzzle, 0)
+    ;
+    for (int index = 0; index < puzzle.size(); index++){
+        int compare = puzzle.costTraversal(puzzle, index);
+        if (compare > max){
+            max = compare;
+        }
+        else if(compare < min){
+            min = compare;
+        }
+    }
+    cout << "The smallest number of the puzzle list is: " << min << endl;
+    //puzzle.breadthFirstTraversal(puzzle, min);
+    cout << "The Largest number of the puzzle list is: " << max << endl;
+    //puzzle.breadthFirstTraversal(puzzle, max);
 }
 void GraphTester::setup(){
     puzzle.addVertex("a ");
