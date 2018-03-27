@@ -31,6 +31,12 @@ public:
     BinaryTreeNode<Type> * getLeftNode();
 };
 template<class Type>
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>(){
+    root = nullptr;
+    right = nullptr;
+    left = nullptr;
+}
+template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode(){
     return this->root;
 }
