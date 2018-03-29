@@ -14,10 +14,13 @@
 #include "Array.hpp"
 #include "ArrayTester.hpp"
 #include "GraphTester.hpp"
+#include "BinaryTreeTester.hpp"
 using namespace std;
 
 void controller :: start()
 {
+    BinaryTreeTester tree;
+    tree.doTreeStuff();
     GraphTester graph;
     graph.testGraphs();
     ArrayTester myTest;
