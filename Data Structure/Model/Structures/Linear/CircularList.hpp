@@ -111,7 +111,7 @@ Type CircularList<Type> :: getFromIndex(int index){
 }
 template<class Type>
 Type CircularList<Type> :: remove(int index){
-    assert(index >= 0 && idnex < this->size);
+    assert(index >= 0 && index < this->size);
     DoubleNode<Type> * removed = findNode(index);
     DoubleNode<Type> * removedPrevious = removed->getPrevious();
     DoubleNode<Type> * removedNext = removed->getNext();
