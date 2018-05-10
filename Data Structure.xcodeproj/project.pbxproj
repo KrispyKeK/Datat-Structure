@@ -21,7 +21,6 @@
 		61C169F72024B27100DAC96B /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C169F52024B27100DAC96B /* CrimeData.cpp */; };
 		61C169FF2024B4D800DAC96B /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C169FD2024B4D800DAC96B /* FileController.cpp */; };
 		61EEEABF2093675E0055C7D8 /* ThrowAway.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61EEEABD2093675E0055C7D8 /* ThrowAway.cpp */; };
-		61EEEAC62093763D0055C7D8 /* Hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61EEEAC42093763D0055C7D8 /* Hashtable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,7 +79,6 @@
 		61EEEABD2093675E0055C7D8 /* ThrowAway.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThrowAway.cpp; sourceTree = "<group>"; };
 		61EEEABE2093675E0055C7D8 /* ThrowAway.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThrowAway.hpp; sourceTree = "<group>"; };
 		61EEEAC12093738B0055C7D8 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
-		61EEEAC42093763D0055C7D8 /* Hashtable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hashtable.cpp; sourceTree = "<group>"; };
 		61EEEAC52093763D0055C7D8 /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,7 +221,6 @@
 				615FD85520600276005B8F87 /* Graph.hpp */,
 				619E27D8206A9ED1007CE112 /* Tree.hpp */,
 				615A279B206D296B003BBA86 /* BinarySearchTree.hpp */,
-				61EEEAC42093763D0055C7D8 /* Hashtable.cpp */,
 				61EEEAC52093763D0055C7D8 /* Hashtable.hpp */,
 			);
 			path = NonLinear;
@@ -309,7 +306,6 @@
 				619E27D6206A9B40007CE112 /* BinaryTreeTester.cpp in Sources */,
 				61C169EB2024B05F00DAC96B /* controller.cpp in Sources */,
 				616067E1205AB41A0098E670 /* SortingTester.cpp in Sources */,
-				61EEEAC62093763D0055C7D8 /* Hashtable.cpp in Sources */,
 				616652F0202A0013000022B4 /* ArrayTester.cpp in Sources */,
 				6188B0BA20470EEE00775624 /* TestingStacksAndQueues.cpp in Sources */,
 				61C169F12024B13000DAC96B /* Timer.cpp in Sources */,

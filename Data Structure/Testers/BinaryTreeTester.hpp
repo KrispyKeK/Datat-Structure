@@ -12,6 +12,7 @@
 #include "BinaryTreeNode.hpp"
 #include <iostream>
 #include "BinarySearchTree.hpp"
+using namespace std;
 
 class BinaryTreeTester{
 private:
