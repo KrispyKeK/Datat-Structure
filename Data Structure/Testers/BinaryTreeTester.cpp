@@ -7,7 +7,6 @@
 //
 
 #include "BinaryTreeTester.hpp"
-
 void BinaryTreeTester :: doTreeStuff(){
     testTree.insert(3);
     testTree.insert(1);
@@ -22,6 +21,7 @@ void BinaryTreeTester :: doTreeStuff(){
     testTree.insert(9001);
     testTree.insert(420);
     testTree.insert(600);
+    
     testTree.inOrderTraversal();
 }
 

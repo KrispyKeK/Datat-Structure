@@ -30,6 +30,7 @@ protected:
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
     
     void removeNode(BinaryTreeNode<Type> * removeMe);
+    void destroyTree(BinaryTreeNode<Type> * node);
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -51,16 +52,22 @@ public:
     void insert(Type itemToInsert);
     void remove(Type value);
     
-    Type findMinimum;
-    Type findMaximum;
+    Type findMinimum();
+    Type findMaximum();
 };
 template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree(){
     this->root = nullptr;
 }
 template <class Type>
-BinarySearchTree<Type> :: ~BinarySearchTree<Type>(){
-    
+Type BinarySearchTree<Type>::findMaximum(){
+    assert(this->root!=nullptr);
+    return getRightMostChild(this->root)->getData();
+}
+template<class Type>
+Type BinarySearchTree<Type>::findMinimum(){
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
 }
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert){
@@ -326,6 +333,38 @@ void BinarySearchTree<Type>::removeNode(BinaryTreeNode<Type> * removeMe){
         }
     }
 }
-
+template <class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode){
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
+    while (currentNode != nullptr){
+        previous = currentNode;
+        currentNode = currentNode->getLeftNode();
+    }
+    return previous;
+}
+template<class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode){
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
+    while(currentNode != nullptr){
+        previous = currentNode;
+        currentNode = currentNode->getRightNode();
+        
+    }
+    return previous;
+}
+template<class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree(){
+    destroyTree(this->root);
+}
+template <class Type>
+void BinarySearchTree<Type>:: destroyTree(BinaryTreeNode<Type> * node){
+    if(node != nullptr){
+        destroyTree(node->getLeftNode());
+        destroyTree(node->getRightNode());
+        delete node;
+    }
+}
 #endif /* BinarySearchTree_hpp */
 

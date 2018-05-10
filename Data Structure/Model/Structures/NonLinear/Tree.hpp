@@ -17,7 +17,6 @@ class Tree{
 protected:
     BinaryTreeNode<Type> * root;
 public:
-    
     virtual int getSize() = 0;
     virtual int getHeight() = 0;
     virtual bool isComplete() = 0;
