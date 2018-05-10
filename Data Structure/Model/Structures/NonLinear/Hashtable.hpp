@@ -12,26 +12,30 @@
 #include <stdio.h>
 #include "HashNode.hpp"
 #include <cmath>
-
+#include <iostream>
+#include <vector>
 using namespace std;
+
 template <class Type>
 class Hashtable{
 private:
     HashNode<Type> ** internalStorage;
     long size;
+    long capacity;
     double loadFactor;
+    
     long getNextPrimeNumber();
     bool isPrime(long current);
+    
     int candidateNumber;
     void resize();
-    long capacity;
     long findPosition(HashNode<Type> * insertedNode);
-    long getSize();
-    long handleCollision(HashNode<Type> * current, long index);
+    long handleCollision(long index);
 public:
     Hashtable();
     ~Hashtable();
     void insert(Type data);
+    long getSize();
     
 };
 template <class Type>
@@ -57,12 +61,12 @@ template <class Type>
 void Hashtable<Type> :: resize(){
     long updatedCapacity = getNextPrimeNumber();
     HashNode<Type> ** tempStorage = new Hashtable<Type> * [updatedCapacity];
-    std::fill_n(tempStorage, updatedCapacity, nullptr);
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
     long oldCapacity = this->capacity;
     this->capacity = updatedCapacity;
     
     for(long index = 0; index < oldCapacity; index++){
-        if(hashTableStorage[index] != nullptr){
+        if(internalStorage[index] != nullptr){
             HashNode<Type> * temp = internalStorage[index];
             long position = findPosition(temp);
             if(tempStorage[position] == nullptr){
@@ -86,13 +90,13 @@ void Hashtable<Type> :: insert(Type value){
     }
     HashNode<Type> * temp = new Hashtable<Type>(value);
     long index = findPosition(temp);
-    if(internal[index] == nullptr){
-        internal[index] = temp;
+    if(internalStorage[index] == nullptr){
+        internalStorage[index] = temp;
     }
     else{
         long updatedPosition = handleCollision(temp, index);
         if(updatedPosition != -1){
-            internal[updatedPosition] = temp;
+            internalStorage[updatedPosition] = temp;
         }
     }
 }
@@ -103,7 +107,7 @@ long Hashtable<Type> :: findPosition(HashNode<Type> * insert){
     return insertPosition;
 }
 template <class Type>
-long Hashtable<Type> :: handleCollision(HashNode<Type> *, long index){
+long Hashtable<Type> :: handleCollision(long currentPosition){
     long shift = 17;
     for (long position = currentPosition+shift;position != currentPosition; position++){
         position += shift;

@@ -27,8 +27,8 @@ public:
     virtual bool contains(Type data) = 0;
     virtual void remove(Type data) = 0;
     
-    virtual void inOrderTraversals() = 0;
-    virtual void preOrderTraversals() = 0;
-    virtual void postOrderTraversals() = 0;
+    virtual void inOrderTraversal() = 0;
+    virtual void preOrderTraversal() = 0;
+    virtual void postOrderTraversal() = 0;
 };
 #endif /* Tree_hpp */

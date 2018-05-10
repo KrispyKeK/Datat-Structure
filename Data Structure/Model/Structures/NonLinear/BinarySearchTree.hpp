@@ -310,7 +310,7 @@ void BinarySearchTree<Type>::removeNode(BinaryTreeNode<Type> * removeMe){
     else{
         current = getRightMostChild(removeMe->getLeftNode());
         previous = current -> getRootNode();
-        removeMe->setData(current->getData);
+        removeMe->setData(current->getData());
         if (previous == nullptr){
             removeMe->setLeftNode(current->getLeftNode());
         }
