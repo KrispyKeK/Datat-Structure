@@ -17,6 +17,7 @@ using namespace std;
 class BinaryTreeTester{
 private:
     BinarySearchTree<int> testTree;
+    BinarySearchTree<string> testStringTree;
 public:
     void doTreeStuff();
 };

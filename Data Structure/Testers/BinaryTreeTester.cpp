@@ -22,8 +22,19 @@ void BinaryTreeTester :: doTreeStuff(){
     testTree.insert(420);
     testTree.insert(600);
     
+    testStringTree.insert("Give");
+    testStringTree.insert("Me");
+    testStringTree.insert("Dat");
+    testStringTree.insert("Solid");
+    testStringTree.insert("A");
+    testStringTree.insert("+");
+    
     testTree.inOrderTraversal();
     testTree.postOrderTraversal();
     testTree.preOrderTraversal();
+    
+    testStringTree.inOrderTraversal();
+    testStringTree.postOrderTraversal();
+    testStringTree.preOrderTraversal();
 }
 
